@@ -60,13 +60,35 @@ function renderTableToDOM(array){
         <td>${employee.idNumber}</td>
         <td>${employee.jobTitle}</td>
         <td>${employee.salary}</td>
-        <button class="deleteButton" id="delete${employee.idNumber}>Delete</button>
+        <td><button id="${employee.idNumber}"">Delete Employee</button></td>
       </tr>
-      `
-      console.log(newTableRow);
+      `;
+
+      //render newTableRow
       tableBody.append(newTableRow);
+
+      //Load Click Listener for delete button
+      let selectButtonID = '#' + employee.idNumber;
+      let selectRowID = '#row' + employee.idNumber;
+      deleteClickListener(selectRowID, selectButtonID);
   }
-};
+}; //end renderTableToDOM()
+
+//Function Click Listener
+function deleteClickListener(row, id){
+  $(id).on('click', function(){
+    //Call deleteButton to remove HTML and object
+    deleteButton(row, id);
+  });
+}
+
+//Function Deletes table row HTML and employee Object
+function deleteButton(rowID){
+  console.log('in deleteButton')
+  $(rowID).remove();
+  
+
+}
 
 // Required Feature - calculate cumulative salary and render to DOM ()
 function calculateMonthly(array){
@@ -85,4 +107,3 @@ function calculateMonthly(array){
   $('#monthlyTotal').text(`${monthlySalaryExpense}`);
 };
 
-// Delete ()
