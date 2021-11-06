@@ -40,10 +40,10 @@ function addNewEmployeeToArray(first, last, id, title, salary){
     idNumber: id,
     jobTitle: title,
     salary: salary,
-  }
+  };
 
   employeeArray.push(newEmployeeObject);
-}
+};
 
 // Required Feature - render [] to '#tableDiv' on DOM ()
 function renderTableToDOM(array){
@@ -70,25 +70,32 @@ function renderTableToDOM(array){
       //Load Click Listener for delete button
       let selectButtonID = '#' + employee.idNumber;
       let selectRowID = '#row' + employee.idNumber;
-      deleteClickListener(selectRowID, selectButtonID);
+      deleteClickListener(selectRowID, selectButtonID, employee.idNumber);
   }
 }; //end renderTableToDOM()
 
 //Function Click Listener
-function deleteClickListener(row, id){
-  $(id).on('click', function(){
+function deleteClickListener(rowID, buttonID, idNumber){
+  $(buttonID).on('click', function(){
     //Call deleteButton to remove HTML and object
-    deleteButton(row, id);
+    deleteButton(rowID, idNumber, employeeArray);
   });
-}
+};
 
 //Function Deletes table row HTML and employee Object
-function deleteButton(rowID){
-  console.log('in deleteButton')
+function deleteButton(rowID, idNumber, array){
+  //remove row HTML by fed rowID
   $(rowID).remove();
-  
+  //remove employee Object by fed idNumber  
+  for (let i in array){
+    if (array[i].idNumber === idNumber ){
+      array.splice(i, 1);
+    };
+  };
 
-}
+  // array.filter(function(el) { return el.idNumber === id; });
+  //Gave this a try, will return and examine
+};
 
 // Required Feature - calculate cumulative salary and render to DOM ()
 function calculateMonthly(array){
@@ -96,7 +103,6 @@ function calculateMonthly(array){
   let monthlySalaryExpense = 0;
   const monthlySalaryMax = 20000;
 
-  console.log(array);
   for (let employee of array){
     annualSalaryTotal = employee.salary;
   };
