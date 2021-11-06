@@ -54,12 +54,13 @@ function renderTableToDOM(array){
 
   for (let employee of array) {
     let newTableRow = `
-      <tr id="${employee.idNumber}">
+      <tr id="row${employee.idNumber}">
         <td>${employee.firstName}</td>
         <td>${employee.lastName}</td>
         <td>${employee.idNumber}</td>
         <td>${employee.jobTitle}</td>
         <td>${employee.salary}</td>
+        <button class="deleteButton" id="delete${employee.idNumber}>Delete</button>
       </tr>
       `
       console.log(newTableRow);
@@ -75,20 +76,13 @@ function calculateMonthly(array){
 
   console.log(array);
   for (let employee of array){
-    console.log(employee.salary);
     annualSalaryTotal = employee.salary;
   };
 
-  console.log(annualSalaryTotal)
-
   monthlySalaryExpense = Math.floor(annualSalaryTotal / 12);
-  console.log(monthlySalaryExpense);
 
   //add total to salary total output
   $('#monthlyTotal').text(`${monthlySalaryExpense}`);
-
-
-
 };
 
 // Delete ()

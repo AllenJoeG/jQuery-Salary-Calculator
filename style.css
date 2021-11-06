@@ -1,0 +1,31 @@
+body {
+  background-color: lightsteelblue;
+}
+
+head {
+  height: 15%;
+  background-color: darkslategray;
+}
+
+#inputDiv {
+
+}
+
+table {
+  border: solid black 2px;
+}
+
+.tableColumnHead { 
+  background-color: darkslategray;
+  border: solid black 2px;
+  width: 175px;
+  height: 2em;
+}
+
+tr{
+  background-color: lightslategray;
+}
+
+tr:nth-child(2){
+  background-color: lightgray;
+}

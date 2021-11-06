@@ -29,11 +29,12 @@
       <table>
         <thead id="tableHead">
           <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>ID Number</th>
-            <th>Job Title</th>
-            <th>Salary</th>
+            <th class="tableColumnHead">First Name</th>
+            <th class="tableColumnHead">Last Name</th>
+            <th class="tableColumnHead">ID Number</th>
+            <th class="tableColumnHead">Job Title</th>
+            <th class="tableColumnHead">Salary</th>
+            <th class="tableColumnHead"></th>
           </tr>
         </thead>
         <!-- Remember to insert delete button into tbody rows-->
@@ -41,10 +42,12 @@
 
         </tbody>
         <tfoot id="tableFoot">
-          <td><span id="monthlyTotal">$</span></td>
+          <tr>
+          </tr>
         </tfoot>
       </table>
     </div>
+    <span id="monthlyTotal">$</span>
 
     <script src="client.js" async defer></script>
   </body>
