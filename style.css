@@ -29,13 +29,19 @@ table {
   color:white;
 }
 
-tr{
+tr {
   background-color: lightslategray;
-  
+  height: 1.35em;
+  align-content: center;
 }
 
 tr:nth-child(2) {
   background-color: lightgray;
+}
+
+tfoot {
+  height: 2em;
+  width: 100%;
 }
 
 .redBackground {

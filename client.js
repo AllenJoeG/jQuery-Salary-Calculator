@@ -30,7 +30,7 @@ function submitButton(){
   $('#idNumberInput').val('');
   $('#jobTitleInput').val('');
   $('#salaryInput').val('');
-};
+}; // end submitButton()
 
 // Required Feature - creates new employee object ()
 function addNewEmployeeToArray(first, last, id, title, salary){
@@ -43,7 +43,7 @@ function addNewEmployeeToArray(first, last, id, title, salary){
   };
 
   employeeArray.push(newEmployeeObject);
-};
+}; //end addNewEmployeeToArray()
 
 // Required Feature - render [] to '#tableDiv' on DOM ()
 function renderTableToDOM(array){
@@ -73,15 +73,15 @@ function renderTableToDOM(array){
   }
 }; //end renderTableToDOM()
 
-//Function Click Listener
+//Required Feature - Function Loads Click Listener to delete buttons
 function deleteClickListener(rowID, buttonID, idNumber){
   $(buttonID).on('click', function(){
     //Call deleteButton to remove HTML and object
     deleteButton(rowID, idNumber, employeeArray);
   });
-};
+}; //end deleteClickListener()
 
-//Function Deletes table row HTML and employee Object
+//Required Feature - Function Deletes table row HTML and employee Object
 function deleteButton(rowID, idNumber, array){
   //remove row HTML by fed rowID
   $(rowID).remove();
@@ -95,7 +95,7 @@ function deleteButton(rowID, idNumber, array){
   calculateMonthly(array);
   // array.filter(function(el) { return el.idNumber === id; });
   //Gave this a try, will return and examine
-};
+}; //end deleteButton()
 
 // Required Feature - calculate cumulative salary and render to DOM ()
 function calculateMonthly(array){
@@ -119,5 +119,5 @@ function calculateMonthly(array){
     $('.expenditureDiv').removeClass('redBackground');
 
   }
-};
+}; //end calculateMonthly()
 

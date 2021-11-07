@@ -1,10 +1,12 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+--- JQuery Salary Calculator ---
+
+This project challenges the aspiring software developer to integrate HTML, CSS, Javascript, and jQuery into a cohesive, dynamic product that accepts user data and dynamically renders it to the DOM.
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This app accepts five pieces of user input data to create new employee objects. It displays the employee object data in a dynamically rendered table, and keeps a running total at the bottom of the monthly expenditure of paying the salaries of all employees.
 
 
 
