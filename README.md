@@ -36,23 +36,28 @@ calculateMonthly()
   Updates DOM with monthly Expenditure. If the expenditure is greater than $20,000/mo, highlights in red.
 
 
-Screen Shot
-![Wireframe](salary-calc-wireframe.png)
-Wireframe does not reflect finished product!
+--- Screen Shot ---
 
-Prerequisites
+![Wireframe](salary-calc-wireframe.png)
+Wireframe reflects features, but not this styled product.
+
+--- Prerequisites ---
+
 No installation required. Open index.html in browser of your choice.
 
-Usage
+--- Usage ---
+
 To be used as a referral template for further coding implementation. A great source example for porting functionality to other languages, frameworks, or libraries.
 
-Built With
+--- Built With ---
+
 HTML, CSS, Javascript, jQuery, VSCode
 
-Acknowledgement
+--- Acknowledgement ---
+
 Thanks to Prime Digital Academy for the education and inspiration of this assignment. Shout-out to Gemini cohort for bandying different tips, tricks, and approaches in Slack.
 
-Support
+--- Support ---
 If you have suggestions or issues, please email me at: 
 allen.joeG@gmail.com
 

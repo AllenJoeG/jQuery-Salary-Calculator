@@ -17,62 +17,55 @@
         <h5>Brought to you by Joe Allen, jQuery, Javascript, HTML and CSS. 11/7/2021</h5>
       </div>
     </head>
-    <!-- <div class="inputDiv">
-      <input id="firstNameInput" placeholder="First Name" type="text">
-      <input id="lastNameInput" placeholder="Last Name" type="text">
-      <input id="idNumberInput" placeholder="Employee ID" type="number">
-      <input id="jobTitleInput" placeholder="Job Title" type="text">
-      <input id="salaryInput" placeholder="Salary" type="number">
-      <button id="submitButton">Submit</button>
-    </div> -->
-    <div class="tableDiv">
-      <table>
-        <thead id="tableHead">
-          <tr>
-            <th class="tableColumnHead">First Name</th>
-            <th class="tableColumnHead">Last Name</th>
-            <th class="tableColumnHead">ID Number</th>
-            <th class="tableColumnHead">Job Title</th>
-            <th class="tableColumnHead">Salary</th>
-            <th class="tableColumnHead"></th>
-          </tr>
-          <tr>
-            <td><input id="firstNameInput" placeholder="First Name" type="text"></td>
-              <td><input id="lastNameInput" placeholder="Last Name" type="text"></td>
-              <td><input id="idNumberInput" placeholder="Employee ID" type="number"></td>
-              <td><input id="jobTitleInput" placeholder="Job Title" type="text"></td>
-              <td><input id="salaryInput" placeholder="Salary" type="number"></td>
-              <td><button id="submitButton">Add Employee</button></td>
-          </tr>
-        </thead>
-        
-        <tbody id="tableBody">
-          <!-- <tr>
-            <td>Add</td>
-            <td>Employee</td>
-            <td>Above</td>
-            <td>To Explore</td>
-            <td>Functionality</td>
-            <td></td>
-          </tr> -->
-        </tbody>
-        <tfoot id="tableFoot">
-          <tr>
-            <!-- <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td> -->
-          </tr>
-        </tfoot>
-      </table>
-    </div >
+    <main>
+      <div class="tableDiv">
+        <table>
+          <thead id="tableHead">
+            <tr>
+              <th class="tableColumnHead">First Name</th>
+              <th class="tableColumnHead">Last Name</th>
+              <th class="tableColumnHead">ID Number</th>
+              <th class="tableColumnHead">Job Title</th>
+              <th class="tableColumnHead">Salary</th>
+              <th class="tableColumnHead"></th>
+            </tr>
+            <tr>
+              <td><input id="firstNameInput" placeholder="First Name" type="text"></td>
+                <td><input id="lastNameInput" placeholder="Last Name" type="text"></td>
+                <td><input id="idNumberInput" placeholder="Employee ID" type="number"></td>
+                <td><input id="jobTitleInput" placeholder="Job Title" type="text"></td>
+                <td><input id="salaryInput" placeholder="Salary" type="number"></td>
+                <td><button id="submitButton">Add Employee</button></td>
+            </tr>
+          </thead>
 
-    <div class="expenditureDiv">
-      <p>Monthly Salary Expenditure: $<span id="monthlyTotal">0</span></p>
-    </div>
-    
+          <tbody id="tableBody">
+            <!-- <tr>
+              <td>Add</td>
+              <td>Employee</td>
+              <td>Above</td>
+              <td>To Explore</td>
+              <td>Functionality</td>
+              <td></td>
+            </tr> -->
+          </tbody>
+          <tfoot id="tableFoot">
+            <tr>
+              <!-- <td></td>
+              <td></td>
+              <td></td>
+            <td></td>
+              <td></td>
+              <td></td> -->
+            </tr>
+          </tfoot>
+        </table>
+      </div >
+
+      <div class="expenditureDiv">
+        <p>Monthly Salary Expenditure: $<span id="monthlyTotal">0</span></p>
+      </div>
+    </main>
     <script src="client.js" async defer></script>
   </body>
 </html>
