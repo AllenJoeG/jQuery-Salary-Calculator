@@ -2,13 +2,11 @@ body {
   background-color: lightsteelblue;
 }
 
-head {
-  height: 15%;
+.headDiv {
+  height: 6em;
+  border: solid black 2px;
   background-color: darkslategray;
-}
-
-.inputDiv {
-
+  color: whitesmoke;
 }
 
 .tableDiv {
@@ -42,6 +40,13 @@ tr:nth-child(2) {
 tfoot {
   height: 2em;
   width: 100%;
+}
+
+.expenditureDiv {
+  margin-top: 10px;
+  background-color: darkslategray;
+  border: solid black 2px;
+  color: white;
 }
 
 .redBackground {
