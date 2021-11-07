@@ -91,6 +91,8 @@ function deleteButton(rowID, idNumber, array){
       array.splice(i, 1);
     };
   };
+  //refresh Expenditure display
+  calculateMonthly(array);
   // array.filter(function(el) { return el.idNumber === id; });
   //Gave this a try, will return and examine
 };
@@ -112,7 +114,10 @@ function calculateMonthly(array){
   
 
   if(monthlySalaryExpense > 20000){
-    $('.expenditureDiv').toggleClass('redBackground');
-  } 
+    $('.expenditureDiv').addClass('redBackground');
+  } else if (monthlySalaryExpense < 20000 && $('.expenditureDiv').hasClass('redBackground')){
+    $('.expenditureDiv').removeClass('redBackground');
+
+  }
 };
 
