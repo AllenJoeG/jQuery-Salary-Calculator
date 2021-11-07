@@ -26,6 +26,14 @@ tr{
   background-color: lightslategray;
 }
 
-tr:nth-child(2){
+tr:nth-child(2) {
   background-color: lightgray;
+}
+
+.class {
+
+}
+
+.redBackground {
+  background-color: red;
 }

@@ -52,6 +52,7 @@ function renderTableToDOM(array){
   //clear the <tbody> to redraw
   tableBody.empty();
 
+  //Render the table, button, and clickListener for each employee object in employeeArray
   for (let employee of array) {
     let newTableRow = `
       <tr id="row${employee.idNumber}">
@@ -63,10 +64,8 @@ function renderTableToDOM(array){
         <td><button id="${employee.idNumber}"">Delete Employee</button></td>
       </tr>
       `;
-
       //render newTableRow
       tableBody.append(newTableRow);
-
       //Load Click Listener for delete button
       let selectButtonID = '#' + employee.idNumber;
       let selectRowID = '#row' + employee.idNumber;
@@ -92,7 +91,6 @@ function deleteButton(rowID, idNumber, array){
       array.splice(i, 1);
     };
   };
-
   // array.filter(function(el) { return el.idNumber === id; });
   //Gave this a try, will return and examine
 };
@@ -104,12 +102,17 @@ function calculateMonthly(array){
   const monthlySalaryMax = 20000;
 
   for (let employee of array){
-    annualSalaryTotal = employee.salary;
+    annualSalaryTotal += employee.salary;
   };
 
   monthlySalaryExpense = Math.floor(annualSalaryTotal / 12);
 
   //add total to salary total output
   $('#monthlyTotal').text(`${monthlySalaryExpense}`);
+  
+
+  if(monthlySalaryExpense > 20000){
+    $('#expenditureDiv').toggleClass('.redBackground');
+  } 
 };
 
