@@ -9,7 +9,7 @@ function readyFunction(){
 // array of employee objects []
 const employeeArray = [];
 
-// push user values to new employee object ()
+// Main Function
 function submitButton(){
   //get Input values
   let firstNameIn = $('#firstNameInput').val();
@@ -17,11 +17,11 @@ function submitButton(){
   let idNumIn = $('#idNumberInput').val();
   let titleIn = $('#jobTitleInput').val();
   let salaryIn = $('#salaryInput').val();
-
+  //push values into new employee object
   addNewEmployeeToArray(firstNameIn, lastNameIn, Number(idNumIn), titleIn, Number(salaryIn));
-
+  //empty #tableBody and redraw rows and deleteButton, and load clickListener
   renderTableToDOM(employeeArray);
-
+  //Loop through employeeArray, add up .salary, divide by 12, render to DOM.
   calculateMonthly(employeeArray);
 
   //clear input values
@@ -112,7 +112,7 @@ function calculateMonthly(array){
   
 
   if(monthlySalaryExpense > 20000){
-    $('#expenditureDiv').toggleClass('.redBackground');
+    $('.expenditureDiv').toggleClass('redBackground');
   } 
 };
 

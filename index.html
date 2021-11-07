@@ -17,15 +17,15 @@
         <h5>Brought to you by Joe Allen, jQuery, Javascript, HTML and CSS</h5>
       </div>
     </head>
-    <div id="inputDiv">
-      <input id="firstNameInput" placeholder="First Name" type="text">
+    <div class="inputDiv">
+      <!-- <input id="firstNameInput" placeholder="First Name" type="text">
       <input id="lastNameInput" placeholder="Last Name" type="text">
       <input id="idNumberInput" placeholder="Employee ID" type="number">
       <input id="jobTitleInput" placeholder="Job Title" type="text">
       <input id="salaryInput" placeholder="Salary" type="number">
-      <button id="submitButton">Submit</button>
+      <button id="submitButton">Submit</button> -->
     </div>
-    <div id="tableDiv">
+    <div class="tableDiv">
       <table>
         <thead id="tableHead">
           <tr>
@@ -35,6 +35,14 @@
             <th class="tableColumnHead">Job Title</th>
             <th class="tableColumnHead">Salary</th>
             <th class="tableColumnHead"></th>
+          </tr>
+          <tr>
+            <td><input id="firstNameInput" placeholder="First Name" type="text"></td>
+              <td><input id="lastNameInput" placeholder="Last Name" type="text"></td>
+              <td><input id="idNumberInput" placeholder="Employee ID" type="number"></td>
+              <td><input id="jobTitleInput" placeholder="Job Title" type="text"></td>
+              <td><input id="salaryInput" placeholder="Salary" type="number"></td>
+              <td><button id="submitButton">Add Employee</button></td>
           </tr>
         </thead>
         <!-- Remember to insert delete button into tbody rows-->
@@ -54,9 +62,12 @@
           </tr>
         </tfoot>
       </table>
-    </div class="#expenditureDiv">
-    <p>Monthly Salary Expenditure: $<span id="monthlyTotal">0</span></p>
-
+    </div >
+   
+    <div class="expenditureDiv">
+      <p>Monthly Salary Expenditure: $<span id="monthlyTotal">0</span></p>
+    </div>
+    
     <script src="client.js" async defer></script>
   </body>
 </html>

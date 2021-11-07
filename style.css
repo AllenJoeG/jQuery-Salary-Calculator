@@ -7,12 +7,18 @@ head {
   background-color: darkslategray;
 }
 
-#inputDiv {
+.inputDiv {
 
+}
+
+.tableDiv {
+  background-color: whitesmoke;
 }
 
 table {
   border: solid black 2px;
+  margin-top: 10px;
+  padding: 3px;
 }
 
 .tableColumnHead { 
@@ -20,10 +26,12 @@ table {
   border: solid black 2px;
   width: 175px;
   height: 2em;
+  color:white;
 }
 
 tr{
   background-color: lightslategray;
+  
 }
 
 tr:nth-child(2) {
@@ -33,6 +41,7 @@ tr:nth-child(2) {
 .class {
 
 }
+
 
 .redBackground {
   background-color: red;
