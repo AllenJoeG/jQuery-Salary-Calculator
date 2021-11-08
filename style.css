@@ -7,16 +7,19 @@ body {
   border: solid black 2px;
   background-color: darkslategray;
   color: whitesmoke;
+  width: 100%;
 }
 
 .tableDiv {
   background-color: whitesmoke;
+  width: 100%;
 }
 
 table {
   border: solid black 2px;
   margin-top: 10px;
   padding: 3px;
+  width: 100%;
 }
 
 .tableColumnHead { 
@@ -33,7 +36,7 @@ tr {
   align-content: center;
 }
 
-tr:nth-child(2) {
+tr:nth-child(odd) {
   background-color: lightgray;
 }
 
@@ -47,6 +50,7 @@ tfoot {
   background-color: darkslategray;
   border: solid black 2px;
   color: white;
+  width: 100%;
 }
 
 .redBackground {

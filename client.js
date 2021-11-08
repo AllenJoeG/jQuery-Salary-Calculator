@@ -111,7 +111,6 @@ function calculateMonthly(array){
 
   //add total to salary total output
   $('#monthlyTotal').text(`${monthlySalaryExpense}`);
-  
 
   if(monthlySalaryExpense > 20000){
     $('.expenditureDiv').addClass('redBackground');
