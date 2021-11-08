@@ -8,7 +8,7 @@ function readyFunction(){
   $('#submitButton').on('click', submitButton);
 };
 
-// array of employee objects []
+// array of employee objects [] with two test employee objects
 const employeeArray = [
   {
     firstName: 'Joe',
@@ -77,7 +77,7 @@ function renderTableToDOM(array){
         <td>${employee.lastName}</td>
         <td>${employee.idNumber}</td>
         <td>${employee.jobTitle}</td>
-        <td>${employee.salary}</td>
+        <td>$${(employee.salary).toLocaleString('en-US')}</td>
         <td><button id="${employee.idNumber}"">Delete Employee</button></td>
       </tr>
       `;
@@ -124,7 +124,7 @@ function calculateMonthly(array){
     annualSalaryTotal += employee.salary;
   };
 
-  monthlySalaryExpense = Math.floor(annualSalaryTotal / 12);
+  monthlySalaryExpense = (annualSalaryTotal / 12).toFixed(2);
 
   //add total to salary total output
   $('#monthlyTotal').text(`${monthlySalaryExpense}`);

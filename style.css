@@ -30,6 +30,10 @@ table {
   color:white;
 }
 
+.inputRow td {
+  border-bottom: solid black 2px;
+}
+
 tr {
   background-color: lightslategray;
   height: 1.35em;
