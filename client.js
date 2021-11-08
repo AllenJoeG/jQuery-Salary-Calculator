@@ -119,4 +119,3 @@ function calculateMonthly(array){
 
   }
 }; //end calculateMonthly()
-
