@@ -3,11 +3,28 @@ $(document).ready(readyFunction);
 
 function readyFunction(){
   console.log('jQuery.js Battlecruiser Operational')
+  renderTableToDOM(employeeArray);
+  calculateMonthly(employeeArray);
   $('#submitButton').on('click', submitButton);
 };
 
 // array of employee objects []
-const employeeArray = [];
+const employeeArray = [
+  {
+    firstName: 'Joe',
+    lastName: 'Allen',
+    idNumber: 1234,
+    jobTitle: 'Spreadsheet Creator',
+    salary: 82000,
+  },
+  {
+    firstName: 'Kelly',
+    lastName: 'Danger',
+    idNumber: 1423,
+    jobTitle: 'Test Employee',
+    salary: 82000,
+  }
+];
 
 // Main Function
 function submitButton(){
